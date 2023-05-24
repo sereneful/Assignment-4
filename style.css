@@ -61,12 +61,6 @@ img {
   justify-content: center;
 }
 
-#gamebutton {
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-}
-
 #gamebutton button {
   margin: 0 5px;
 }
