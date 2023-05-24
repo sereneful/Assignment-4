@@ -61,6 +61,19 @@ img {
   justify-content: center;
 }
 
+#gamebutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+#gamebutton button {
+  margin: 0 5px;
+}
+
+
 #reset {
   display: block;
   margin: 0 auto;
