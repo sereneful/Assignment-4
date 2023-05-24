@@ -115,7 +115,7 @@ $(document).ready(function () {
           firstCard = undefined;
           secondCard = undefined;
           setup();
-        }, 1000);
+        }, 800);
       }
     });
 
