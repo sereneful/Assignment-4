@@ -100,12 +100,17 @@ img {
 }
 
 #difficulty {
-  display: flex; 
-  justify-content: center; 
-  width: max-content; 
-  margin: 0 auto; 
-  margin-top: 20px; 
+  display: flex;
+  justify-content: center;
+  width: max-content;
+  margin: 0 auto;
+  margin-top: 20px;
 }
+
+#difficulty button {
+  margin: 0 10px;
+}
+
 
 
 #color {
