@@ -17,7 +17,7 @@ $(document).ready(function () {
     $(this).hide();
     $("#difficulty").hide();
 
-    fetch('https://pokeapi.co/api/v2/pokemon?limit=150')
+    fetch('https://pokeapi.co/api/v2/pokemon')
       .then(response => response.json())
       .then(data => {
         let allPokemon = data.results;
@@ -61,7 +61,7 @@ $(document).ready(function () {
     timerInterval = setInterval(() => {
       time++;
       $("#time").text("Time Elapsed: " + time);
-    }, 1000);
+    }, 500);
   };
 
   const resetTimer = () => {
