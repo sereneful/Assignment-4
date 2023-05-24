@@ -2,8 +2,12 @@ body {
   margin: 0px;
 }
 
-#game_grid {
-  border: 2px tomato solid;
+#game {
+  display: none;
+}
+
+#grid {
+  border: 2px solid black;
   width: 600px;
   height: 400px;
   margin: auto;
@@ -11,15 +15,25 @@ body {
   flex-wrap: wrap;
 }
 
+#grid.intermediate {
+  width: 800px;
+  height: 605px;
+  
+}
+
+#grid.advanced {
+  width: 1195px;
+  height: 800px;
+}
 
 .card {
-  width: 33.3%;
+  width: 198px;
+  height: 198px;
   position: relative;
   transition: transform 1s;
   perspective: 1000px;
   transform-style: preserve-3d;
 }
-
 
 img {
   width: 100%
@@ -39,4 +53,90 @@ img {
 
 .front_face {
   transform: rotateY(180deg);
+}
+
+#counter {
+  font-size:smaller;
+  display: flex;
+  justify-content: center;
+}
+
+#gamebutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+#gamebutton button {
+  margin: 0 5px;
+}
+
+
+#reset {
+  display: block;
+  margin: 0 auto;
+  border: 2px solid black;
+}
+
+#start {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+  border: 2px solid black;
+}
+
+#novice {
+  border: 2px solid black;
+}
+
+#intermediate {
+  border: 2px solid black;
+}
+
+#advanced {
+  border: 2px solid black;
+}
+
+#difficulty {
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+}
+
+#color {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  gap: 10px;
+}
+
+#white {
+  border: 2px solid black;
+}
+
+#black {
+  border: 2px solid black;
+}
+
+.back_face.white {
+  background-color: white;
+  
+}
+
+.back_face.black {
+  background-color: black;
+}
+
+#powerup {
+  display: block;
+  margin: 0 auto;
+  border: 2px solid black;
+}
+
+#gameheader {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
 }
