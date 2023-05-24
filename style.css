@@ -100,10 +100,13 @@ img {
 }
 
 #difficulty {
-  display: block;
-  width: 400px;
-  margin: 0 auto;
+  display: flex; 
+  justify-content: center; 
+  width: max-content; 
+  margin: 0 auto; 
+  margin-top: 20px; 
 }
+
 
 #color {
   display: flex;
