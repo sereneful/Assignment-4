@@ -17,7 +17,7 @@ $(document).ready(function () {
     $(this).hide();
     $("#difficulty").hide();
 
-    fetch('https://pokeapi.co/api/v2/pokemon')
+    fetch('https://pokeapi.co/api/v2/pokemon?limit=150')
       .then(response => response.json())
       .then(data => {
         let allPokemon = data.results;
